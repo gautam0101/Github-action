@@ -20,13 +20,5 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
-    - name: Set up PostgreSQL
-      uses: docker/setup-postgres@v1
-
-    - name: Django database migration
-      run: |
-        python manage.py makemigrations
-        python manage.py migrate
-
     - name: Django test
       run: python manage.py test
