@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nodebackend
+  labels:
+    app: nodebackend
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: nodebackend
+  template:
+    metadata:
+      labels:
+        app: nodebackend
+    spec:
+      containers:
+        - name: nodebackend
+          image: >-
+            XXXXXXXXX.dkr.ecr.ap-south-1.amazonaws.com/node_app:24c691ac9a7d9e5488202a039dbccd28a50ccb32
+          ports:
+            - containerPort: 8000
+          imagePullPolicy: Always
