@@ -22,7 +22,7 @@ step 2:- To build the docker image
 step 3:- check the images in the
           docker images
           docker run -p 8000:8000 <image_id> # Put the Image id and open the browser and check localhost:8000
-
+          https://drive.google.com/file/d/1DTTprWwUQ7n4T78UQKG36CH9Zuo56gch/view?usp=sharing
 
 Push the image to AWS ECR (Elastic Container Registry):- 
 Step by step user guide https://drive.google.com/file/d/1yyKyseGE_N07ogGZcP55pBE7Aod8CgRs/view?usp=sharing
@@ -63,7 +63,7 @@ brew install weaveworks/tap/eksctl
 step 2:-  Create an EKS cluster using eksctl
 eksctl create cluster --name my-cluster --region ap-south-1 --nodegroup-name linux-nodes  --node-type t2.micro --nodes 2
 #You can give the any name to the cluster but don't give sampe to more then one.
-
+https://drive.google.com/file/d/1bWsCpLSwjDnYPypMZVtm4mBc0o4Wecih/view?usp=sharing
 Step 3:- Configure EKS to kubectl
 // To configure
 aws eks update-kubeconfig --region ap-south-1 --name my-cluster
@@ -74,7 +74,7 @@ kubectl get nodes
 Step 4:- You deploy the application to the EKS with following commands directly.
 
 kubectl apply -f  kube.yaml service.yaml
-
+https://drive.google.com/file/d/11qsNbkha9YO5T7YQSaMtGp9YdycAczHq/view?usp=sharing
 step 5:- Create a GitOps Repo
 #folder structure
 .github
@@ -83,6 +83,8 @@ step 5:- Create a GitOps Repo
 |-kube
    |- deployment.yaml
    |- service.yaml
+   
+   
    
    
    
