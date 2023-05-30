@@ -1,0 +1,15 @@
+Steps for docker:-
+create a folder and initialize the npm in the folder
+It creates the package.json file, package-lock.json file.
+install express js
+create a server.js file in the node-app
+Create a Dockerfile
+build the docker image
+check the images in the
+open the browser and check
+
+For create AWS ECR we:-
+Login to account 
+Search for ECR 
+And create repo
+And add the user access id to github
