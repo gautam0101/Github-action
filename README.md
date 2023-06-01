@@ -1,6 +1,6 @@
 How to Integrate CI CD pipeline in AWS ECR and AWS EKS using Github actions
 This document outlines the steps to integrate CI CD pipeline in AWS ECR and AWS EKS using Github actions, allowing you to automate code analysis and quality checks for your repository.
-follow this document for more info:- https://towardsaws.com/containerize-node-js-a25b7e9a1e85
+follow this document for more info:- https://towardsaws.com/containerize-node-js-a25b7e9a1e85/"Link"
 
 Step by step user guide https://drive.google.com/file/d/15imowp0o8a4CiGpMJIIFTI2Mbvm60vRS/view?usp=sharing.
 
