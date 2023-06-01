@@ -38,16 +38,16 @@ Push the image to AWS ECR (Elastic Container Registry):-
 
           Step by step user guide [Link](https://drive.google.com/file/d/1yyKyseGE_N07ogGZcP55pBE7Aod8CgRs/view?usp=sharing)
 
-step for integration:-
-# What you need firt a AWS account.
+# step for integration:-
+## What you need firt a AWS account.
 
 step 1:-To create security credentials,
 step 2:- Goto access keys and click on generate, It will create the Access keys.
 step 3:- Go to the application repo settings and add the secrets for the actions to use.
 
 
-# Create an ECR Repo in AWS
-step for integration:- 
+## Create an ECR Repo in AWS
+# step for integration:- 
 
 step 1:- Search for Elastic Container Registry, And click on the create.
 
@@ -58,23 +58,23 @@ step 3:- And click on create.
 step 4:- Now we have a repo ready, Copy the Image URI to add it ton GitHub action
 
 
-# Add Github Action to build the image and push it to ECR in Code Repo
+## Add Github Action to build the image and push it to ECR in Code Repo
 
-step for integration:- 
+# step for integration:- 
 
-# folder structure
+folder structure
 
 .github
 
 |-workflows
       
-      |- pushtoecr.yaml #In this file replace the REPO url.
+      |- pushtoecr.yaml  #In this file replace the REPO url.
 
 
 
 # Deploy it to the AWS EKS (Elastic Kubernetes Service) cluster
 
-step for integration:- 
+# step for integration:- 
 
 step 1:- Install eksctl
 
