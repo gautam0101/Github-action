@@ -32,11 +32,11 @@ step 3:- check the images in the
           
           docker images
           
-          docker run -p 8000:8000 <image_id> # Put the Image id and open the browser and check localhost:8000[Link](https://drive.google.com/file/d/1DTTprWwUQ7n4T78UQKG36CH9Zuo56gch/view?usp=sharing)
+          docker run -p 8000:8000 <image_id> # Put the Image id and open the browser and check localhost:8000 [Link](https://drive.google.com/file/d/1DTTprWwUQ7n4T78UQKG36CH9Zuo56gch/view?usp=sharing)
 
 Push the image to AWS ECR (Elastic Container Registry):- 
 
-          Step by step user guide [Link](https://drive.google.com/file/d/1yyKyseGE_N07ogGZcP55pBE7Aod8CgRs/view?usp=sharing)
+          Step by step user guide  [Link](https://drive.google.com/file/d/1yyKyseGE_N07ogGZcP55pBE7Aod8CgRs/view?usp=sharing)
 
 # step for integration:-
 ## What you need firt a AWS account.
