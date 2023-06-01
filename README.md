@@ -73,7 +73,7 @@ kubectl get nodes
 
 Step 4:- You deploy the application to the EKS with following commands directly.
 
-==kubectl apply -f  kube.yaml service.yaml==
+`kubectl apply -f  kube.yaml service.yaml`
 [Link](https://drive.google.com/file/d/11qsNbkha9YO5T7YQSaMtGp9YdycAczHq/view?usp=sharing)
 step 5:- Create a GitOps Repo
 #folder structure
