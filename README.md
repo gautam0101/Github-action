@@ -25,14 +25,17 @@ Step 3: create a server.js file in the node-app
         touch server.js
         
 # Create a Dockerfile:-
+
 Step 1:- touch Dockerfile #By the help of this command you create a file.
+
 step 2:- To build the docker image
           docker build .
+
 step 3:- check the images in the
           
           `docker images`
           
-          `docker run -p 8000:8000 <image_id>` # Put the Image id and open the browser and check localhost:8000 
+          `docker run -p 8000:8000 <image_id>` # Put the Image id and open the browser and check localhost:8000
           [Link](https://drive.google.com/file/d/1DTTprWwUQ7n4T78UQKG36CH9Zuo56gch/view?usp=sharing)
 
 Push the image to AWS ECR (Elastic Container Registry):- 
