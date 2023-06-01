@@ -12,13 +12,9 @@ Step by step user guide [Link](https://drive.google.com/file/d/15imowp0o8a4CiGpM
  
  install express js
  
- Setup your AWS account video
- 
- Create IAM user with programmatic access video
 
-
-Step for integration
-# Create Node.js application:- 
+# Step for integration
+## Create Node.js application:- 
 Step 1: create a folder and initialize the npm in the folder
           .mkdir node-app
           .cd node-app
