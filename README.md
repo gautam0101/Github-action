@@ -40,13 +40,12 @@ step 3:- check the images in the
           
           `docker images`
           
-          `docker run -p 8000:8000 <image_id>` # Put the Image id and open the browser and check localhost:8000
+          `docker run -p 8000:8000 <image_id>` # Put the Image id and open the browser and check localhost:8000`
           
  ![Screenshot from 2023-05-25 09-46-05](https://github.com/gautam0101/Github-action/assets/101164301/39b86115-15a5-488f-9409-3b95c19b4b49)
 
-          Push the image to AWS ECR (Elastic Container Registry):- 
 
-          Step by step user guide:-
+          `Step by step user guide:-
  [Video](https://drive.google.com/file/d/1yyKyseGE_N07ogGZcP55pBE7Aod8CgRs/view?usp=sharing)
 
 
@@ -67,8 +66,8 @@ step 3:- Go to the application repo settings and add the secrets for the actions
          4. Go to the new repository secret
          
          5. AWS_ACCESS_KEY_ID add this and save
-         
-         ![Screenshot from 2023-06-09 13-35-18](https://github.com/gautam0101/Github-action/assets/101164301/9075ef95-5056-487a-8c84-d400a8b91a7d)
+           
+  ![Screenshot from 2023-06-09 13-35-18](https://github.com/gautam0101/Github-action/assets/101164301/9075ef95-5056-487a-8c84-d400a8b91a7d)
 
 
 
@@ -105,7 +104,7 @@ folder structure
 
 |-workflows
       
-      |- pushtoecr.yaml  #In this file replace the REPO url.
+  |- pushtoecr.yaml  #In this file replace the REPO url.
 
 
 
