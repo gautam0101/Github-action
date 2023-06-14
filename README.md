@@ -8,10 +8,7 @@ Step by step user guide [Link](https://drive.google.com/file/d/15imowp0o8a4CiGpM
 
 ## Prerequisite:
  
- Create Node.js application
- 
- install express js
- 
+ Create Node.js application(If you clone this app don't need to create new application) 
 
 # Step for integration
 ## Create Node.js application:- 
