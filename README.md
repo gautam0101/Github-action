@@ -11,6 +11,7 @@ Step-by-step user guide [Link](https://drive.google.com/file/d/15imowp0o8a4CiGpM
  1. Now about how to create node app. 
 
 # Step for integration
+1. Clone the app ``` Git clone https://github.com/gautam0101/CICD_pipeline_AWS_ECR_and_AWS_EKS_using_Github_actions.git ```
 
 ## Create Node.js application:- 
 
@@ -114,7 +115,7 @@ step 3:- And click on Create.
 ![Screenshot from 2023-06-09 13-37-28](https://github.com/gautam0101/Github-action/assets/101164301/4d6c39cc-1a5c-42b5-afab-ee169daa1b13)
 
 
-step 4:- Now we have a repo ready, Copy the Image URI to add it to GitHub action
+step 4:- Now we have a repo ready, Copy the Image URL to add it to pushtoecr.yaml at line 32
 
 ![Screenshot from 2023-06-09 13-39-21](https://github.com/gautam0101/Github-action/assets/101164301/a438d014-fb6e-4605-a9c1-b2a39fc9d0a6)
 
