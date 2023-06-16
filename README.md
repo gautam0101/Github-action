@@ -24,11 +24,17 @@ Step 1: Create a folder and initialize the npm in the folder
 ```
 Step 2: Install Express js
 
-```npm i express```
+``` 
+npm i express
+
+```
 
 Step 3: Create a server.js file in the node-app 
         
-        ```touch server.js```
+```
+touch server.js
+
+```
         
 ## Create a Dockerfile:-
 
