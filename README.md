@@ -132,66 +132,64 @@ Create an action in the gitops repo with the name pushtoecr.yaml and the followi
 
 # Deploy it to the AWS EKS (Elastic Kubernetes Service) cluster
 
-# step for integration:- 
+step 1:- Install eksctl
 
-step 1:- `Install eksctl`
+```
+brew tap weaveworks/tap  # Adds third party repositaries to home brew
 
-// Adds third party repositaries to home brew
+brew install weaveworks/tap/eksctl  # Installs eksctl
 
-`brew tap weaveworks/tap`
-
-// Installs eksctl
-
-`brew install weaveworks/tap/eksctl`
+```
 
 step 2:-  Create an EKS cluster using eksctl
 
-`eksctl create cluster --name my-cluster --region ap-south-1 --nodegroup-name linux-nodes  --node-type t2.micro --nodes 2`
+```
+eksctl create cluster --name my-cluster --region ap-south-1 --nodegroup-name linux-nodes  --node-type t2.micro --nodes 2
 
-#You can give the any name to the cluster but don't give sampe to more then one.
+```
+
+#You can give any name to the cluster but don't give simple to more than one.
 
 ![Screenshot from 2023-05-26 16-22-27](https://github.com/gautam0101/Github-action/assets/101164301/9704902f-00dd-4843-8382-41c7831f1988)
 
 Step 3:- Configure EKS to kubectl
 
-// To configure
+```
+aws eks update-kubeconfig --region ap-south-1 --name my-cluster  #To configure
 
-`aws eks update-kubeconfig --region ap-south-1 --name my-cluster`
+kubectl get nodes  # To Check the configuration 
 
-// To Check the configuration 
+```
 
-`kubectl get nodes`
+# This will give the nodes you have in the cluster as output
 
-# This will give the the nodes you have in the cluster as output
-
-Step 4:- You deploy the application to the EKS with following commands directly.
+Step 4:- You deploy the application to the EKS with the following commands directly.
 
 `kubectl apply -f  kube.yaml service.yaml`![Screenshot from 2023-05-30 12-03-29](https://github.com/gautam0101/Github-action/assets/101164301/49225bce-7754-4fd9-a5ef-5f1ca156c7b1)
 
 step 5:- Create a GitOps Repo with this folder structure.
 
-# steps for create git repo
+# steps for creating a git repo
    
-   1. go to the github account
+   1. go to the GitHub account
    2. go to the repositories
    3. click new
    4. add repo name
-   5. click on add redme.md file
+   5. click on add readme.md file
    6. create.
    7. then clone the repo
    8. after clone make this folder structure in it and add the code to the files (we cloned this repo so we don't need the make new repo to start this)
 
+```
+#folder structure
 .github
-
 |-workflows
-
-|- triggerargocd.yml
-
+      |- triggerargocd.yml
 |-kube
-   
    |- deployment.yaml
-   
    |- service.yaml
+
+```
    
    
    
