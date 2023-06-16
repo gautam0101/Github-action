@@ -8,12 +8,11 @@ Step-by-step user guide [Link](https://drive.google.com/file/d/15imowp0o8a4CiGpM
 
 ## Prerequisite:
  
- 1. Clone this app for code.
- 
+ 1. Now about how to create node app. 
 
-## Step for integration
+# Step for integration
 
-# Create Node.js application:- 
+## Create Node.js application:- 
 
 Step 1: Create a folder and initialize the npm in the folder
 ```
@@ -27,32 +26,30 @@ Step 2: Install Express js
 
 ```npm i express```
 
-Step 3: create a server.js file in the node-app 
+Step 3: Create a server.js file in the node-app 
         
-        `touch server.js`
+        ```touch server.js```
         
-# Create a Dockerfile:-
+## Create a Dockerfile:-
 
-Step 1:- touch Dockerfile #By the help of this command you create a file.
+Step 1:- ```touch Dockerfile #By the help of this command you create a file.```
 
-step 2:- To build the docker image
-          
-          `docker build .`
+step 2:- ```docker build #To build the docker image ```
 
 step 3:- check the images in the
           
-          `docker images`
+      ```docker images
           
-          `docker run -p 8000:8000 <image_id>` # Put the Image id and open the browser and check localhost:8000`
+          docker run -p 8000:8000 <image_id>` # Put the Image id and open the browser and check localhost:8000 ```
           
  ![Screenshot from 2023-05-25 09-46-05](https://github.com/gautam0101/Github-action/assets/101164301/39b86115-15a5-488f-9409-3b95c19b4b49)
 
 
-          `Step by step user guide:-
+          `Step by-step user guide:-
  [Video](https://drive.google.com/file/d/1yyKyseGE_N07ogGZcP55pBE7Aod8CgRs/view?usp=sharing)
 
 
-## What you need firt a AWS account.
+## What you need first an AWS account.
 
 step 1:-To create security credentials.
 
