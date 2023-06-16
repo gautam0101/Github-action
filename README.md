@@ -49,7 +49,7 @@ touch Dockerfile  #By the help of this command you create a file.
 step 2:- 
 
 ```
-docker build #To build the docker image
+docker build . #To build the docker image
 
 ```
 
