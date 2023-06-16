@@ -67,11 +67,19 @@ step 3:- check the images in the
  Step-by-step user guide:- [Video](https://drive.google.com/file/d/1yyKyseGE_N07ogGZcP55pBE7Aod8CgRs/view?usp=sharing)
 
 
-## Create an AWS account.
+## Push the image to AWS ECR (Elastic Container Registry)
 
-step 1:-To create security credentials.
+Log in to AWS and create a security credential to add it to the Github secrets to use in the Github actions.
 
-step 2:- Goto access keys and click on generate, It will create the Access keys.
+step 1:- Go create security credentials.
+
+![Screenshot from 2023-06-16 13-00-43](https://github.com/gautam0101/Github-action/assets/101164301/07e6f3e4-b1d6-4489-be1e-b361b20eb1ab)
+
+
+step 2:- Go to access keys and click on generate, It will create the Access keys. # If you have already so use that key
+
+![image](https://github.com/gautam0101/Github-action/assets/101164301/f6f8881f-acdf-4a2e-a0fb-1bab994e3cf6)
+
 
 step 3:- Go to the application repo settings and add the secrets for the actions to use.
          
@@ -83,7 +91,7 @@ step 3:- Go to the application repo settings and add the secrets for the actions
          
          4. Go to the new repository secret
          
-         5. AWS_ACCESS_KEY_ID add this and save
+         5. AWS_ACCESS_KEY_ID Add this and save
            
   ![Screenshot from 2023-06-09 13-35-18](https://github.com/gautam0101/Github-action/assets/101164301/9075ef95-5056-487a-8c84-d400a8b91a7d)
 
@@ -91,7 +99,7 @@ step 3:- Go to the application repo settings and add the secrets for the actions
 
 ## Create an ECR Repo in AWS
 
-step 1:- Search for Elastic Container Registry, And click on the create.
+step 1:- Search for Elastic Container Registry, And click on Create.
  
  ![Screenshot from 2023-06-09 13-37-06](https://github.com/gautam0101/Github-action/assets/101164301/6ca0e1cf-403b-4f13-9424-de40c9aac3b1)
 
@@ -101,12 +109,12 @@ step 2:- Add the name of the repo
 ![Screenshot from 2023-06-09 13-37-17](https://github.com/gautam0101/Github-action/assets/101164301/63bcc7ab-155e-4bc1-8d31-5d72e26c30ee)
 
 
-step 3:- And click on create.
+step 3:- And click on Create.
 
 ![Screenshot from 2023-06-09 13-37-28](https://github.com/gautam0101/Github-action/assets/101164301/4d6c39cc-1a5c-42b5-afab-ee169daa1b13)
 
 
-step 4:- Now we have a repo ready, Copy the Image URI to add it ton GitHub action
+step 4:- Now we have a repo ready, Copy the Image URI to add it to GitHub action
 
 ![Screenshot from 2023-06-09 13-39-21](https://github.com/gautam0101/Github-action/assets/101164301/a438d014-fb6e-4605-a9c1-b2a39fc9d0a6)
 
@@ -115,16 +123,13 @@ step 4:- Now we have a repo ready, Copy the Image URI to add it ton GitHub actio
 ## Add Github Action to build the image and push it to ECR in Code Repo
 
 
-
-folder structure
-
+```
+#folder structure
 .github
-
 |-workflows
-      
-  |- pushtoecr.yaml  #In this file replace the REPO url.
+      |- pushtoecr.yaml
 
-
+```
 
 # Deploy it to the AWS EKS (Elastic Kubernetes Service) cluster
 
