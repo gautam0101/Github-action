@@ -1,10 +1,10 @@
 ## How to Integrate CI CD pipeline in AWS ECR and AWS EKS using Github actions
 
-This document outlines the steps to integrate CI CD pipeline in AWS ECR and AWS EKS using Github actions, allowing you to automate code analysis and quality checks for your repository.
+This document outlines the steps to integrate the CI CD pipeline in AWS ECR and AWS EKS using Github actions, allowing you to automate code analysis and quality checks for your repository.
 
 follow this document for more info:- [Link](https://towardsaws.com/containerize-node-js-a25b7e9a1e85)
 
-Step by step user guide [Link](https://drive.google.com/file/d/15imowp0o8a4CiGpMJIIFTI2Mbvm60vRS/view?usp=sharing).
+Step-by-step user guide [Link](https://drive.google.com/file/d/15imowp0o8a4CiGpMJIIFTI2Mbvm60vRS/view?usp=sharing).
 
 ## Prerequisite:
  
@@ -15,14 +15,17 @@ Step by step user guide [Link](https://drive.google.com/file/d/15imowp0o8a4CiGpM
 
 # Create Node.js application:- 
 
-Step 1: create a folder and initialize the npm in the folder
+Step 1: Create a folder and initialize the npm in the folder
+```
+          mkdir node-app
+          
+          cd node-app
+          
+          npm init
+```
+Step 2: Install Express js
 
-          `.mkdir node-app`
-          
-          `.cd node-app`
-          
-          `.npm init`
-Step 2: install express js
+```npm i express```
 
 Step 3: create a server.js file in the node-app 
         
