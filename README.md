@@ -64,11 +64,10 @@ step 3:- check the images in the
  ![Screenshot from 2023-05-25 09-46-05](https://github.com/gautam0101/Github-action/assets/101164301/39b86115-15a5-488f-9409-3b95c19b4b49)
 
 
-          `Step-by-step user guide:-
- [Video](https://drive.google.com/file/d/1yyKyseGE_N07ogGZcP55pBE7Aod8CgRs/view?usp=sharing)
+ Step-by-step user guide:- [Video](https://drive.google.com/file/d/1yyKyseGE_N07ogGZcP55pBE7Aod8CgRs/view?usp=sharing)
 
 
-## What you need first an AWS account.
+## Create an AWS account.
 
 step 1:-To create security credentials.
 
