@@ -32,20 +32,33 @@ Step 3: Create a server.js file in the node-app
         
 ## Create a Dockerfile:-
 
-Step 1:- ```touch Dockerfile #By the help of this command you create a file.```
+Step 1:- 
 
-step 2:- ```docker build #To build the docker image ```
+``` 
+touch Dockerfile  #By the help of this command you create a file.
+
+```
+
+step 2:- 
+
+```
+docker build #To build the docker image
+
+```
 
 step 3:- check the images in the
           
-      ```docker images
+  ``` 
+   docker images
           
-          docker run -p 8000:8000 <image_id>` # Put the Image id and open the browser and check localhost:8000 ```
+   docker run -p 8000:8000 <image_id>` # Put the Image id and open the browser and check localhost:8000 
+          
+  ``` 
           
  ![Screenshot from 2023-05-25 09-46-05](https://github.com/gautam0101/Github-action/assets/101164301/39b86115-15a5-488f-9409-3b95c19b4b49)
 
 
-          `Step by-step user guide:-
+          `Step-by-step user guide:-
  [Video](https://drive.google.com/file/d/1yyKyseGE_N07ogGZcP55pBE7Aod8CgRs/view?usp=sharing)
 
 
