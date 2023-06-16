@@ -17,11 +17,11 @@ Step-by-step user guide [Link](https://drive.google.com/file/d/15imowp0o8a4CiGpM
 
 Step 1: Create a folder and initialize the npm in the folder
 ```
-          mkdir node-app
+mkdir node-app
           
-          cd node-app
+cd node-app
           
-          npm init
+npm init
 ```
 Step 2: Install Express js
 
@@ -74,9 +74,6 @@ Log in to AWS and create a security credential to add it to the Github secrets t
 
 step 1:- Go create security credentials.
 
-![Screenshot from 2023-06-16 13-00-43](https://github.com/gautam0101/Github-action/assets/101164301/07e6f3e4-b1d6-4489-be1e-b361b20eb1ab)
-
-
 step 2:- Go to access keys and click on generate, It will create the Access keys. # If you have already so use that key
 
 ![image](https://github.com/gautam0101/Github-action/assets/101164301/f6f8881f-acdf-4a2e-a0fb-1bab994e3cf6)
@@ -123,6 +120,7 @@ step 4:- Now we have a repo ready, Copy the Image URL to add it to pushtoecr.yam
 
 ## Add Github Action to build the image and push it to ECR in Code Repo
 
+Create an action in the gitops repo with the name pushtoecr.yaml and the following code. In the below code, The GitHub action triggers to push and pull_request in the repo. The action will log in to the AWS account and build the image with the latest code and push it to the ECR.
 
 ```
 #folder structure
